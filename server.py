@@ -13,6 +13,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(msg.encode())
         msg = "\nThis is added line"
         self.wfile.write(msg.encode())
+        msg = "\nThis is another added new line"
+        self.wfile.write(msg.encode())
 
 
 port = int(os.getenv('PORT', 80))
