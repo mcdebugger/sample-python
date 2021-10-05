@@ -13,6 +13,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(msg.encode())
         msg = "\nThis is added line"
         self.wfile.write(msg.encode())
+        # Just some comment to comment
         msg = "\nThis is another added new line"
         self.wfile.write(msg.encode())
 
